@@ -1,0 +1,47 @@
+<ng-form name="formIngresoUsuario" role="form" class="ng-scope" novalidate>
+<!-- <div class="modal-dialog"> -->
+	<div class="modal-content">
+	    <div class="modal-header">
+	    	<button type="button" class="close" ng-click="cancel()">&times;</button>
+	      	<h4 class="modal-title text-center">{{'h4_ingreso_usuario_ingresar' | translate}}</h4>
+	    </div>
+	    <div class="modal-body">
+	    	<div class="row">
+  				<div class="col-md-12">
+  					<label>{{'label_ingreso_usuario_correo' | translate}}</label>
+  					<input type="email" name="email" ng-model="usuario.correo" class="form-control" placeholder="{{'placeholder_main_correo' | translate}}" required>
+  				</div>
+				<div class="col-md-12">
+					<label>{{'label_ingreso_usuario_contrasenia' | translate}}</label>
+					<input type="password" name="password" ng-model="usuario.contrasenia" class="form-control" placeholder="{{'label_ingreso_usuario_contrasenia' | translate}}" required>
+				</div>
+				<div class="col-md-12">
+					<div class="checkbox">
+				    	<label class="remember-me">
+			            	<input name="remember" type="checkbox" value="true">
+			              		{{'label_ingreso_usuario_recordar_info' | translate}}
+				    	</label>
+				  	</div>
+				</div>
+				<br>
+		      	<div class="row" ng-if="alertaIngresoUsuario">
+	  				<div class="col-md-12">
+			  			<div class="alert alert-danger">
+			 					<button name="mensajeAlertaIngreso" type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+			 					{{'alert_ingreso_usuario_usuario_incorrecto' | translate}}
+						</div>
+					</div>
+	  			</div>
+  			</div> 
+	    </div>
+	    <div class="modal-footer">
+	    	<div class="row">
+  				<div class="col-md-12">
+	    			<button type="button" class="btn btn-default" ng-click="cancel()">{{'label_ingreso_usuario_cerrar' | translate}}</button>
+	      			<button type="button" class="btn btn-primary" ng-disabled="formIngresoUsuario.$invalid"  ng-click="ingresar()">{{'label_ingreso_usuario_ingresar' | translate}}</button>
+	      		</div>
+	      	</div>
+	    </div>
+  	</div>
+<!-- </div> -->
+</ng-form>

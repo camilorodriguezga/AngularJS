@@ -1,0 +1,42 @@
+<div ng-controller="CartasPersonajesCtrl" class="hojaEdadOscura">
+
+	<div class="row">
+   		<h1 class="tituloHoja" translate="label_cartasPersonajes_titulo"></h1>
+   	</div>
+	<div class="simpleDemo row">
+		<div ng-repeat="(listName, lista) in cartasPersonajes.listas" class="col-md-4">
+			<div class="panel panel-danger transparencia">
+				<div class="panel-heading">
+					<h3 class="panel-title subtitulos col-md-offset-4">EDAD {{listName}}</h3>
+				</div>
+				<ul dnd-list="lista" class="list-unstyled transparencia {{lista.length<1?card:''}}">
+					<li ng-repeat="personaje in lista"
+				        dnd-draggable="personaje"
+				        dnd-moved="lista.splice($index, 1); guardarEdad(personaje,listName);"
+				        dnd-effect-allowed="move"
+				        dnd-selected="cartasPersonajes.selected = personaje"
+				        class="borde"
+				        ng-class="{'selected': cartasPersonajes.selected === personaje}"
+				        >
+				        <div id="personajes" class="card">
+				        	<div class="row">
+				        		<div class="col-md-6">
+<!-- 				        			<img src="{{personaje.clan.imagen}}" class="cardimg img-responsive"> -->
+				        		</div>
+				        		<div class="col-md-6">
+									<div class="card-block">
+										<h4 class="card-title">{{personaje.nombre}}</h4>
+								    	<p class="card-text">{{personaje.cronica}}</p>
+								    	<p class="card-text">{{personaje.clan.clan}}</p>
+								    	<p class="card-text">{{personaje.generacion.generacion}}</p>
+<!-- 								    	<a class="btn btn-primary" translate="label_cartasPersonajes_verPersonaje" ng-click="verPersonaje(personaje.nombre);"></a> -->
+								  	</div>
+								</div>
+				        	</div>
+						</div>
+				    </li>
+				</ul> 
+			</div>
+		</div>
+	</div>
+</div>

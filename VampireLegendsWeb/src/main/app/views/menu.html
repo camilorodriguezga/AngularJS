@@ -1,0 +1,55 @@
+<div ng-controller="MenuCtrl">
+	<nav class="navbar navbar-inverse">
+		<div class="navbar-collapse">
+		 	<ul class="nav nav-pills pull-right">
+		    	<li id="hojaRol" role="presentation" >
+				    <a class="menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" translate="label_hoja_rol">
+				       <span class="caret"></span>
+				    </a>
+				    <ul class="dropdown-menu">
+				      	<li id="hojaRolEdadOscura"><a class="menu" ng-click="guardarEdad('OSCURA');" translate="label_edad_oscura"></a></li>
+				      	<li id="hojaRolEdadVictoriana"><a class="menu" ng-click="guardarEdad('VICTORIANA');" translate="label_edad_victoriana"></a></li>
+				      	<li id="hojaRolEdadModerna"><a class="menu" ng-click="guardarEdad('MODERNA');"translate="label_edad_moderna"></a></li>
+				    </ul>
+				</li>
+<!-- 		    	<li id="sala"><a class="menu" ng-href="#/" translate="label_sala"></a></li> -->
+<!-- 		    	<li id="foro"><a class="menu" ng-href="#/" translate="label_foro"></a></li> -->
+<!-- 		    	<li id="escenario"><a class="menu" ng-href="#/" translate="label_escenario"></a></li> -->
+		    	<li id="lista" role="presentation" >
+				    <a class="menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" translate="label_personaje">
+				       <span class="caret"></span>
+				    </a>
+				    <ul class="dropdown-menu">
+				      	<li id="foro"><a class="menu" ng-href="#/Personajes" translate="label_lista_personajes"></a></li>
+				    </ul>
+				</li>
+<!-- 		    	<li ng-controller="languajeCtrl" class="row"> -->
+<!-- 					<select class="languaje" name="selectedLanguage" ng-model="selectedLanguage" ng-change="changeLanguage()"> -->
+<!-- 						<option class="colombia" value="en" translate="global_language_en"></option> -->
+<!-- 						<option class="usa" value="es" translate="global_language_es"></option> -->
+<!-- 					</select> -->
+<!-- 				</li> -->
+				<li class="dropdown" ng-if="!(mostrarIngresoUsuario)">
+					<div class="menu">
+				  		<button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+					    	{{(usuario.nickname != null && usuario.nickname != "")? usuario.nickname: usuario.primerNombre}}<span class="caret"></span>
+					 	 </button>
+					  	<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+					    	<li><a class="herramienta" href="#/" translate="a_perfil"></a></li>
+					    	<li><a href="#/" translate="a_cerrar_sesion" ng-click="cerrarSesion();"></a></li>
+					  	</ul>
+				  	</div>
+				</li>
+				<li ng-if="mostrarIngresoUsuario">
+					<div class="menu">
+				  		<button class="btn btn-primary" ng-click="open()" type="button" translate="h4_ingreso_usuario_ingresar"></button>
+				  	</div>
+				</li>
+		  	</ul>	
+			<div class="navbar-header">
+				<label class="navbar-brand murcielagos"></label><a class="navbar-brand" href="#/" translate="a_legends_vampire"></a>
+	        </div>
+		</div>
+   	</nav>
+</div>
+
