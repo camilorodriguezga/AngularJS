@@ -330,3 +330,4 @@ VampireLegendsService/.settings/org.sonar.ide.eclipse.core.prefs
 .classpath
 .recommenders/
 .settings/gradle/
+.settings
