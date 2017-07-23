@@ -331,3 +331,6 @@ VampireLegendsService/.settings/org.sonar.ide.eclipse.core.prefs
 .recommenders/
 .settings/gradle/
 .settings
+VampireLegendsRepositorio/.settings/
+VampireLegendsService/.settings/
+VampireLegendsJava/.settings/
