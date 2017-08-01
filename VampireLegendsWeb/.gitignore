@@ -20,3 +20,4 @@ VampireLegends/src/main/node_modules
 VampireLegendsWeb/src/main/node_modules/
 src/main/node_modules/
 src/main/app/bower_components
+.tern-project
