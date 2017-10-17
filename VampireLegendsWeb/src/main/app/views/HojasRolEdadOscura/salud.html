@@ -1,19 +1,19 @@
 <div ng-controller="SaludCtrl" class="panel panel-danger transparencia">
-	<div class="panel-heading">
-	   	<div class="row">
-	           <div class="col-md-3 col-md-offset-5">
-	           		<label class="center label-hojaEdadOscura" translate="label_salud_titulo"></label>
-	           </div>
-	           <div class="col-md-1">
-	           		<div class="ayuda" title="{{'title_salud_ayuda' | translate}}"></div>
-	           </div>
-	    </div>
-	</div>
-	<div class="panel-body">
-		<div class="row">
-			<div name="salud" class="col-md-12" ng-repeat="salud in hojaRolEdadOscura.salud">
-				<saludestado nivelsalud="salud"></saludestado>
-			</div>
-		</div>
-	</div>
+    <div class="panel-heading">
+        <div class="row">
+            <div class="col-md-3 col-md-offset-5">
+                <label class="center label-hojaEdadOscura" translate="label_salud_titulo"></label>
+            </div>
+            <div class="col-md-1">
+                <div class="ayuda" title="{{'title_salud_ayuda' | translate}}"></div>
+            </div>
+        </div>
+    </div>
+    <div class="panel-body">
+        <div class="row">
+            <div name="salud" class="col-md-12" ng-repeat="salud in hojaRolEdadOscura.salud">
+                <saludestado nivelsalud="salud"></saludestado>
+            </div>
+        </div>
+    </div>
 </div>

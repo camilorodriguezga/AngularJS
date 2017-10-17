@@ -8,6 +8,6 @@
  * Controller of the vampireLegends
  */
 angular.module('vampireLegends')
-  .controller('HabilidadesCtrl', ['$scope', '$q', function ($scope, $q) {
-	
-  }]);
+    .controller('HabilidadesCtrl', ['$scope', '$q', function ($scope, $q) {
+
+    }]);

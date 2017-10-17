@@ -1,6 +1,6 @@
 <!doctype html>
 <html ng-app="vampireLegends" class="no-js">
-  <head>
+<head>
     <meta charset="utf-8">
     <title translate="a_legends_vampire"></title>
     <meta name="description" content="">
@@ -8,120 +8,122 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
-    
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/vampireLegends.css">
     <!-- endbuild -->
-  </head>
-  <body class="fondo">
-    <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+</head>
+<body class="fondo">
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
 
-    <!-- Add your site or application content here -->
-    <div class="container-narrow">
-    	
-    	<div ng-include src="'views/menu.html'"></div>
-      	
-      	<div ng-view="" class="container-narrow" ng-controller="languajeCtrl"></div>
-      	
-      	<nav class="footer navbar navbar-inverse">
-			<div class="navbar-collapse">
-			  <div class="navbar-header">
-	              <div class="footer-copyrights">© <a class="footer-link" href="#/">BuildSoft - Todos los derechos reservados</a>, 2015</div>
-              </div>
-			</div>
-      	</nav>
-      	
-    </div>
+<!-- Add your site or application content here -->
+<div class="container-narrow">
 
-	
-    	
-    
+    <div ng-include src="'views/menu.html'"></div>
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID 
-     <script>
-       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <div ng-view="" class="container-narrow" ng-controller="languajeCtrl"></div>
 
-       ga('create', 'UA-XXXXX-X');
-       ga('send', 'pageview');
-    </script>
+    <nav class="footer navbar navbar-inverse">
+        <div class="navbar-collapse">
+            <div class="navbar-header">
+                <div class="footer-copyrights">© <a class="footer-link" href="#/">BuildSoft - Todos los derechos
+                    reservados</a>, 2015
+                </div>
+            </div>
+        </div>
+    </nav>
 
-    <!-- build:js(.) scripts/oldieshim.js -->
-    <!--[if lt IE 9]>
-    <script src="bower_components/es5-shim/es5-shim.js"></script>
-    <script src="bower_components/json3/lib/json3.js"></script>
-    <![endif]-->
-    <!-- endbuild -->
+</div>
 
-    <!-- build:js(.) scripts/vendor.js -->
-    <!-- bower:js -->
-    <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
-    <script type="text/javascript" src="bower_components/angular/angular.js"></script>
-    <script type="text/javascript" src="bower_components/angular-resource/angular-resource.js"></script>
-    <script type="text/javascript" src="bower_components/angular-translate/angular-translate.js"></script>
-    <script type="text/javascript" src="bower_components/angular-scenario/angular-scenario.js"></script>
-    <script type="text/javascript" src="bower_components/angular-mocks/angular-mocks.js"></script>
-    <script type="text/javascript" src="bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
-    <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
-    <script type="text/javascript" src="bower_components/angular-cookies/angular-cookies.js"></script>
-    <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-    <script type="text/javascript" src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-    <script type="text/javascript" src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
-    <script type="text/javascript" src="bower_components/angular-drag-and-drop-lists/angular-drag-and-drop-lists.min.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
 
-        <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <!-- Controllers  -->
-        <script type="text/javascript" src="scripts/app.js"></script>
-        <script type="text/javascript" src="scripts/controllers/main.js"></script>
-        <script type="text/javascript" src="scripts/controllers/menu.js"></script>
-        <script type="text/javascript" src="scripts/controllers/HojasRolEdadOscura/experiencia.js"></script>
-        <script type="text/javascript" src="scripts/controllers/HojasRolEdadOscura/debilidad.js"></script>
-        <script type="text/javascript" src="scripts/controllers/HojasRolEdadOscura/salud.js"></script>
-        <script type="text/javascript" src="scripts/controllers/HojasRolEdadOscura/reservaSangre.js"></script>
-        <script type="text/javascript" src="scripts/controllers/HojasRolEdadOscura/fuerzaVoluntad.js"></script>
-        <script type="text/javascript" src="scripts/controllers/HojasRolEdadOscura/camino.js"></script>
-        <script type="text/javascript" src="scripts/controllers/HojasRolEdadOscura/meritoDefecto.js"></script>
-        <script type="text/javascript" src="scripts/controllers/HojasRolEdadOscura/informacionBasica.js"></script>
-        <script type="text/javascript" src="scripts/controllers/HojasRolEdadOscura/atributos.js"></script>
-        <script type="text/javascript" src="scripts/controllers/HojasRolEdadOscura/hojaRolEdadOscura.js"></script>
-        <script type="text/javascript" src="scripts/controllers/HojasRolEdadOscura/habilidades.js"></script>
-        <script type="text/javascript" src="scripts/controllers/HojasRolEdadOscura/ventajas.js"></script>
-        <script type="text/javascript" src="scripts/controllers/HojasRolEdadOscura/habilidades.js"></script>
-        <script type="text/javascript" src="scripts/controllers/IngresoUsuario/ingresoUsuario.js"></script>
-        <script type="text/javascript" src="scripts/controllers/perfil/misPersonajes/cartasPersonajes.js"></script>
-        <script type="text/javascript" src="scripts/controllers/perfil/misPersonajes/listadoPersonajes.js"></script>
-        <!-- EndControllers -->
-        
-        <!-- Directives -->
-        <script type="text/javascript" src="scripts/directives/hojasRolEdadOscura/checkbox.js"></script>
-        <script type="text/javascript" src="scripts/directives/hojasRolEdadOscura/labelycheckbox.js"></script>
-        <script type="text/javascript" src="scripts/directives/hojasRolEdadOscura/adicionaryremover.js"></script>
-        <script type="text/javascript" src="scripts/directives/hojasRolEdadOscura/labelynivel.js"></script>
-        <script type="text/javascript" src="scripts/directives/hojasRolEdadOscura/saludestado.js"></script>
-        
-        <!-- EndDirectives -->    
-        
-        <!-- Service -->
-        <script type="text/javascript" src="scripts/services/UsuarioService.js"></script>
-        <script type="text/javascript" src="scripts/services/hojaVampiro/HojaVampiroEdadOscuraService.js"></script>
-        <script type="text/javascript" src="scripts/services/modalService.js"></script>
-        <!-- EndService -->
-        
-        <!-- Service Rest -->
-        <script type="text/javascript" src="scripts/services/rest/UsuarioRest.js"></script>
-        <script type="text/javascript" src="scripts/services/rest/hojaVampiro/HojaVampiroEdadOscuraRest.js"></script>
-        <!-- EndService Rest -->
-        
-        <!-- endbuild -->
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID
+ <script>
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+   ga('create', 'UA-XXXXX-X');
+   ga('send', 'pageview');
+</script>
+
+<!-- build:js(.) scripts/oldieshim.js -->
+<!--[if lt IE 9]>
+<script src="bower_components/es5-shim/es5-shim.js"></script>
+<script src="bower_components/json3/lib/json3.js"></script>
+<![endif]-->
+<!-- endbuild -->
+
+<!-- build:js(.) scripts/vendor.js -->
+<!-- bower:js -->
+<script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="bower_components/angular/angular.js"></script>
+<script type="text/javascript" src="bower_components/angular-resource/angular-resource.js"></script>
+<script type="text/javascript" src="bower_components/angular-translate/angular-translate.js"></script>
+<script type="text/javascript" src="bower_components/angular-scenario/angular-scenario.js"></script>
+<script type="text/javascript" src="bower_components/angular-mocks/angular-mocks.js"></script>
+<script type="text/javascript"
+        src="bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
+<script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
+<script type="text/javascript" src="bower_components/angular-cookies/angular-cookies.js"></script>
+<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script type="text/javascript" src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script type="text/javascript" src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+<script type="text/javascript"
+        src="bower_components/angular-drag-and-drop-lists/angular-drag-and-drop-lists.min.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js({.tmp,app}) scripts/scripts.js -->
+<!-- Controllers  -->
+<script type="text/javascript" src="scripts/app.js"></script>
+<script type="text/javascript" src="scripts/controllers/main.js"></script>
+<script type="text/javascript" src="scripts/controllers/menu.js"></script>
+<script type="text/javascript" src="scripts/controllers/HojasRolEdadOscura/experiencia.js"></script>
+<script type="text/javascript" src="scripts/controllers/HojasRolEdadOscura/debilidad.js"></script>
+<script type="text/javascript" src="scripts/controllers/HojasRolEdadOscura/salud.js"></script>
+<script type="text/javascript" src="scripts/controllers/HojasRolEdadOscura/reservaSangre.js"></script>
+<script type="text/javascript" src="scripts/controllers/HojasRolEdadOscura/fuerzaVoluntad.js"></script>
+<script type="text/javascript" src="scripts/controllers/HojasRolEdadOscura/camino.js"></script>
+<script type="text/javascript" src="scripts/controllers/HojasRolEdadOscura/meritoDefecto.js"></script>
+<script type="text/javascript" src="scripts/controllers/HojasRolEdadOscura/informacionBasica.js"></script>
+<script type="text/javascript" src="scripts/controllers/HojasRolEdadOscura/atributos.js"></script>
+<script type="text/javascript" src="scripts/controllers/HojasRolEdadOscura/hojaRolEdadOscura.js"></script>
+<script type="text/javascript" src="scripts/controllers/HojasRolEdadOscura/habilidades.js"></script>
+<script type="text/javascript" src="scripts/controllers/HojasRolEdadOscura/ventajas.js"></script>
+<script type="text/javascript" src="scripts/controllers/HojasRolEdadOscura/habilidades.js"></script>
+<script type="text/javascript" src="scripts/controllers/IngresoUsuario/ingresoUsuario.js"></script>
+<script type="text/javascript" src="scripts/controllers/perfil/misPersonajes/cartasPersonajes.js"></script>
+<script type="text/javascript" src="scripts/controllers/perfil/misPersonajes/listadoPersonajes.js"></script>
+<!-- EndControllers -->
+
+<!-- Directives -->
+<script type="text/javascript" src="scripts/directives/hojasRolEdadOscura/checkbox.js"></script>
+<script type="text/javascript" src="scripts/directives/hojasRolEdadOscura/labelycheckbox.js"></script>
+<script type="text/javascript" src="scripts/directives/hojasRolEdadOscura/adicionaryremover.js"></script>
+<script type="text/javascript" src="scripts/directives/hojasRolEdadOscura/labelynivel.js"></script>
+<script type="text/javascript" src="scripts/directives/hojasRolEdadOscura/saludestado.js"></script>
+
+<!-- EndDirectives -->
+
+<!-- Service -->
+<script type="text/javascript" src="scripts/services/UsuarioService.js"></script>
+<script type="text/javascript" src="scripts/services/hojaVampiro/HojaVampiroEdadOscuraService.js"></script>
+<script type="text/javascript" src="scripts/services/modalService.js"></script>
+<!-- EndService -->
+
+<!-- Service Rest -->
+<script type="text/javascript" src="scripts/services/rest/UsuarioRest.js"></script>
+<script type="text/javascript" src="scripts/services/rest/hojaVampiro/HojaVampiroEdadOscuraRest.js"></script>
+<!-- EndService Rest -->
+
+<!-- endbuild -->
 </body>
 </html>

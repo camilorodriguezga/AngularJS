@@ -8,10 +8,10 @@
  * Controller of the vampireLegends
  */
 angular.module('vampireLegends')
-  .controller('FuerzaVoluntadCtrl', ['$scope', '$q', function ($scope, $q) {
-	
-	  if($scope.hojaRolEdadOscura != undefined && $scope.hojaRolEdadOscura != null &&
-			  $scope.hojaRolEdadOscura.fuerzaVoluntad != undefined && $scope.hojaRolEdadOscura.fuerzaVoluntad != null){
-		  $scope.puntosVoluntad = $scope.hojaRolEdadOscura.fuerzaVoluntad.puntos;
-	  }
-  }]);
+    .controller('FuerzaVoluntadCtrl', ['$scope', '$q', function ($scope, $q) {
+
+        if ($scope.hojaRolEdadOscura != undefined && $scope.hojaRolEdadOscura != null &&
+            $scope.hojaRolEdadOscura.fuerzaVoluntad != undefined && $scope.hojaRolEdadOscura.fuerzaVoluntad != null) {
+            $scope.puntosVoluntad = $scope.hojaRolEdadOscura.fuerzaVoluntad.puntos;
+        }
+    }]);

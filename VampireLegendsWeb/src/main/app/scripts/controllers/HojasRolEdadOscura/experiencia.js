@@ -8,6 +8,6 @@
  * Controller of the vampireLegends
  */
 angular.module('vampireLegends')
-  .controller('ExperienciaCtrl', ['$scope', '$q', function ($scope, $q) {
-	
-  }]);
+    .controller('ExperienciaCtrl', ['$scope', '$q', function ($scope, $q) {
+
+    }]);

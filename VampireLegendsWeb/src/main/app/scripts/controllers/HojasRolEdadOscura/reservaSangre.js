@@ -8,6 +8,6 @@
  * Controller of the vampireLegends
  */
 angular.module('vampireLegends')
-  .controller('ReservaSangreCtrl', ['$scope', '$q', function ($scope, $q) {
-	
-  }]);
+    .controller('ReservaSangreCtrl', ['$scope', '$q', function ($scope, $q) {
+
+    }]);

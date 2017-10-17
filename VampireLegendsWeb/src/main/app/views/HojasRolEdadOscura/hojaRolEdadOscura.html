@@ -1,55 +1,61 @@
 <div class="hojaEdadOscura">
 
-	<div class="modal-footer">
-    	<div class="row">
- 			<div class="col-md-12">
-      			<button type="button" class="btn btn-default" ng-click="limpiarHojaRolVampiroEdadOscura()">{{'div_hojaRolEdadOscura_limpiarHoja' | translate}}</button>
-      			<button type="button" class="btn btn-primary" ng-disabled="hojaEdadOscura.$invalid"  ng-click="guardarHojaRolVampiroEdadOscura()">{{'div_hojaRolEdadOscura_guardarHoja' | translate}}</button>
-      		</div>
-      	</div>
-      	<br>
-  		<div class="row" ng-if="mensajeAlertaHojaRol">
-  			<div class="col-md-12">
-  				<div ng-class="tipoMensaje">
-  					<button name="mensajeGuardarAlertaHojaRol" type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-  					{{guardarHojaRol | translate}}
-				</div>
-			</div>
-  		</div>
+    <div class="modal-footer">
+        <div class="row">
+            <div class="col-md-12">
+                <button type="button" class="btn btn-default" ng-click="limpiarHojaRolVampiroEdadOscura()">
+                    {{'div_hojaRolEdadOscura_limpiarHoja' | translate}}
+                </button>
+                <button type="button" class="btn btn-primary" ng-disabled="hojaEdadOscura.$invalid"
+                        ng-click="guardarHojaRolVampiroEdadOscura()">{{'div_hojaRolEdadOscura_guardarHoja' | translate}}
+                </button>
+            </div>
+        </div>
+        <br>
+        <div class="row" ng-if="mensajeAlertaHojaRol">
+            <div class="col-md-12">
+                <div ng-class="tipoMensaje">
+                    <button name="mensajeGuardarAlertaHojaRol" type="button" class="close" data-dismiss="alert"
+                            aria-hidden="true">&times;
+                    </button>
+                    {{guardarHojaRol | translate}}
+                </div>
+            </div>
+        </div>
     </div>
 
-	<div ng-include src="'views/HojasRolEdadOscura/informacionBasica.html'"></div>
+    <div ng-include src="'views/HojasRolEdadOscura/informacionBasica.html'"></div>
 
-	<div ng-include src="'views/HojasRolEdadOscura/atributos.html'"></div>
+    <div ng-include src="'views/HojasRolEdadOscura/atributos.html'"></div>
 
-	<div ng-include src="'views/HojasRolEdadOscura/habilidades.html'"></div>
+    <div ng-include src="'views/HojasRolEdadOscura/habilidades.html'"></div>
 
-	<div ng-include src="'views/HojasRolEdadOscura/ventajas.html'"></div>
+    <div ng-include src="'views/HojasRolEdadOscura/ventajas.html'"></div>
 
-	<div class="row">
-		<div class="col-md-4">
-			<div ng-include src="'views/HojasRolEdadOscura/meritoDefecto.html'"></div>
-		</div>
-		<div class="col-md-4">
+    <div class="row">
+        <div class="col-md-4">
+            <div ng-include src="'views/HojasRolEdadOscura/meritoDefecto.html'"></div>
+        </div>
+        <div class="col-md-4">
 
-			<div ng-include src="'views/HojasRolEdadOscura/camino.html'"></div>
+            <div ng-include src="'views/HojasRolEdadOscura/camino.html'"></div>
 
-			<div ng-include src="'views/HojasRolEdadOscura/fuerzaVoluntad.html'"></div>
+            <div ng-include src="'views/HojasRolEdadOscura/fuerzaVoluntad.html'"></div>
 
-			<div ng-include src="'views/HojasRolEdadOscura/reservaSangre.html'"></div>
+            <div ng-include src="'views/HojasRolEdadOscura/reservaSangre.html'"></div>
 
-		</div>
-		<div class="col-md-4">
+        </div>
+        <div class="col-md-4">
 
-			<div ng-include src="'views/HojasRolEdadOscura/salud.html'"
-				class="col-md-12"></div>
+            <div ng-include src="'views/HojasRolEdadOscura/salud.html'"
+                 class="col-md-12"></div>
 
-			<div ng-include src="'views/HojasRolEdadOscura/debilidad.html'"
-				class="col-md-12"></div>
+            <div ng-include src="'views/HojasRolEdadOscura/debilidad.html'"
+                 class="col-md-12"></div>
 
-			<div ng-include src="'views/HojasRolEdadOscura/experiencia.html'"
-				class="col-md-12"></div>
+            <div ng-include src="'views/HojasRolEdadOscura/experiencia.html'"
+                 class="col-md-12"></div>
 
-		</div>
-	</div>
+        </div>
+    </div>
 </div>

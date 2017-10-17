@@ -8,15 +8,15 @@
  * Controller of the VampireLegends
  */
 angular.module('vampireLegends')
-  .controller('CartasPersonajesCtrl', ['$rootScope', '$scope', '$location', function ($rootScope, $scope, $location) {
-	  
-	  	$scope.ruta = "/HojaRol";
-	  	
+    .controller('CartasPersonajesCtrl', ['$rootScope', '$scope', '$location', function ($rootScope, $scope, $location) {
+
+        $scope.ruta = "/HojaRol";
+
 //	    $scope.verPersonaje = function(personaje){
 //	    	$rootScope.nombrePersonaje = personaje;
 //	    	$location.path($scope.ruta);
 //	    };
-	    
+
 //	    $scope.guardarEdad = function(personaje, listName){
 //	    	
 //	    	for ( var edad in $scope.cartasPersonajes.listas) {
@@ -35,5 +35,5 @@ angular.module('vampireLegends')
 //	    		}
 //			}
 //	    };
-	  
-  }]);
+
+    }]);

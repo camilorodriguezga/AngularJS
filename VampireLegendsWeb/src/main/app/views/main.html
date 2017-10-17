@@ -1,71 +1,81 @@
 <div class="form-group main">
-	<ng-form name="formMain" role="form" class="ng-scope" novalidate>
-		<div class="row">
-<!-- 			<div ng-show="mostrarSonido" class="media-left"> -->
-<!-- 				<audio id="audio" controls="controls" preload="preload" autoplay="autoplay" loop="loop"> -->
-<!-- 			        <source src="{{sonido + '.mp3'}}" type="audio/mp3"/> -->
-<!-- 			        <source src="{{sonido + '.ogg'}}" type="audio/ogg"/> -->
-<!-- 			        <source src="{{sonido + '.wav'}}" type="audio/wav"/> -->
-<!-- 			    </audio> -->
-<!-- 			</div> -->
-			
-			<div class="col-md-7">
-<!-- 				<div class="embed-responsive embed-responsive-16by9"> -->
-<!-- 					<iframe id="video" type="text/html" src="https://www.youtube.com/embed/Pr0-57gmQt4" frameborder="0" allowfullscreen></iframe> -->
-<!-- 				</div> -->
-<!-- 				<br> -->
-				<div class="img-responsive" alt="Responsive image">
-					<div class="rol"></div>
-				</div>
-			</div>
-	
-			
-			<div class="col-md-5 caja-login">
-				<div>
-					<h3 class="title">{{'label_login' | translate}}</h3>
-				</div>
-	  			<div class="row">
-	  				<div class="col-md-6">
-	  					<input type="text" name="nombre" ng-model="usuario.primerNombre" class=" form-control" placeholder="{{'placeholder_main_nombre' | translate}}" required>
-	  				</div>
-	  				<div class="col-md-6">
-	  					<input type="text" name="apellido" ng-model="usuario.primerApellido" class="form-control" placeholder="{{'placeholder_main_apellido' | translate}}" required>
-	  				</div>
-	  			</div>
-	  			<div class="row">
-	  				<div class="col-md-12">
-	  					<input type="email" name="email" ng-model="usuario.correo" class="form-control" placeholder="{{'placeholder_main_correo' | translate}}" required>
-	  				</div>
-	  				<div class="col-md-12">
-						<input type="email" name="email" ng-model="usuario.correoValidado" class="form-control" placeholder="{{'placeholder_main_correoVerificacion' | translate}}" required>
-					</div>
-					<div class="col-md-12">
-						<input type="password" name="password" ng-model="usuario.contrasenia" class="form-control" placeholder="{{'placeholder_main_contrasenia' | translate}}" required>
-					</div>
-	  			</div>  	
-		  		<br>
-		  		<div class="row">
-		  			<div class="col-md-12">
-		  				<button class="btn btn-lg btn-primary btn-block" ng-disabled="!(formMain.$valid && usuario.correoValidado == usuario.correo)" ng-click="crearUsuario();" type="button">{{'button_main_registro' | translate}}</button>
-		  			</div>
-		  		</div>
-		  		<br>
-		  		<div class="row" ng-if="mensajeAlertaRegistroUsuario">
-		  			<div class="col-md-12">
-		  				<div ng-class="tipoMensaje">
-		  					<button name="mensajeRegistroUsuario" type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-		  					{{registroUsuario | translate}}
-						</div>
-					</div>
-		  		</div>
-		  		<div class="row" >
-		  			<div class="col-md-12">
-						<div class="sonido" ng-click="volumenAudio();">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</ng-form>
+    <ng-form name="formMain" role="form" class="ng-scope" novalidate>
+        <div class="row">
+            <!-- 			<div ng-show="mostrarSonido" class="media-left"> -->
+            <!-- 				<audio id="audio" controls="controls" preload="preload" autoplay="autoplay" loop="loop"> -->
+            <!-- 			        <source src="{{sonido + '.mp3'}}" type="audio/mp3"/> -->
+            <!-- 			        <source src="{{sonido + '.ogg'}}" type="audio/ogg"/> -->
+            <!-- 			        <source src="{{sonido + '.wav'}}" type="audio/wav"/> -->
+            <!-- 			    </audio> -->
+            <!-- 			</div> -->
+
+            <div class="col-md-7">
+                <!-- 				<div class="embed-responsive embed-responsive-16by9"> -->
+                <!-- 					<iframe id="video" type="text/html" src="https://www.youtube.com/embed/Pr0-57gmQt4" frameborder="0" allowfullscreen></iframe> -->
+                <!-- 				</div> -->
+                <!-- 				<br> -->
+                <div class="img-responsive" alt="Responsive image">
+                    <div class="rol"></div>
+                </div>
+            </div>
+
+
+            <div class="col-md-5 caja-login">
+                <div>
+                    <h3 class="title">{{'label_login' | translate}}</h3>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <input type="text" name="nombre" ng-model="usuario.primerNombre" class=" form-control"
+                               placeholder="{{'placeholder_main_nombre' | translate}}" required>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" name="apellido" ng-model="usuario.primerApellido" class="form-control"
+                               placeholder="{{'placeholder_main_apellido' | translate}}" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <input type="email" name="email" ng-model="usuario.correo" class="form-control"
+                               placeholder="{{'placeholder_main_correo' | translate}}" required>
+                    </div>
+                    <div class="col-md-12">
+                        <input type="email" name="email" ng-model="usuario.correoValidado" class="form-control"
+                               placeholder="{{'placeholder_main_correoVerificacion' | translate}}" required>
+                    </div>
+                    <div class="col-md-12">
+                        <input type="password" name="password" ng-model="usuario.contrasenia" class="form-control"
+                               placeholder="{{'placeholder_main_contrasenia' | translate}}" required>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-12">
+                        <button class="btn btn-lg btn-primary btn-block"
+                                ng-disabled="!(formMain.$valid && usuario.correoValidado == usuario.correo)"
+                                ng-click="crearUsuario();" type="button">{{'button_main_registro' | translate}}
+                        </button>
+                    </div>
+                </div>
+                <br>
+                <div class="row" ng-if="mensajeAlertaRegistroUsuario">
+                    <div class="col-md-12">
+                        <div ng-class="tipoMensaje">
+                            <button name="mensajeRegistroUsuario" type="button" class="close" data-dismiss="alert"
+                                    aria-hidden="true">&times;
+                            </button>
+                            {{registroUsuario | translate}}
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="sonido" ng-click="volumenAudio();">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ng-form>
 </div>
 

@@ -8,7 +8,7 @@
  * Controller of the vampireLegends
  */
 angular.module('vampireLegends')
-  .controller('AtributosCtrl', ['$scope', '$q', function ($scope, $q) {
-	
-	  
-  }]);
+    .controller('AtributosCtrl', ['$scope', '$q', function ($scope, $q) {
+
+
+    }]);

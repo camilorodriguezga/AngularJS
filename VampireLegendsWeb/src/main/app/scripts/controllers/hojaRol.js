@@ -8,6 +8,6 @@
  * Controller of the proyecto1App
  */
 angular.module('vampireLegends')
-  .controller('HojaRolCtrl', ['$scope', '$q', function ($scope, $q) {
-	
-  }]);
+    .controller('HojaRolCtrl', ['$scope', '$q', function ($scope, $q) {
+
+    }]);

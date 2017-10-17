@@ -1,17 +1,20 @@
 <div ng-controller="InformacionBasicaCtrl" class="panel panel-danger transparencia">
     <div class="panel-body">
-    	<div class="row">
-    		<h1 class="tituloHoja">{{'label_informacionBasica_titulo' | translate}} {{hojaRolEdadOscura.edad}}</h1>
-    	</div>
-    	
+        <div class="row">
+            <h1 class="tituloHoja">{{'label_informacionBasica_titulo' | translate}} {{hojaRolEdadOscura.edad}}</h1>
+        </div>
+
         <div class="row">
             <div class="col-md-4 ">
                 <div class="row">
                     <div class="col-md-5">
-                        <label class="label-hojaEdadOscura" class="label-hojaEdadOscura" translate="label_informacionBasica_nombre"></label>
+                        <label class="label-hojaEdadOscura" class="label-hojaEdadOscura"
+                               translate="label_informacionBasica_nombre"></label>
                     </div>
                     <div class="col-md-7">
-                    	<input type="text" class="form-control"  ng-model="hojaRolEdadOscura.nombre" ng-change="consultarHojaRol();" placeholder="{{'placeholder_informacionBasica_nombre' | translate}}">    
+                        <input type="text" class="form-control" ng-model="hojaRolEdadOscura.nombre"
+                               ng-change="consultarHojaRol();"
+                               placeholder="{{'placeholder_informacionBasica_nombre' | translate}}">
                     </div>
                 </div>
             </div>
@@ -21,10 +24,10 @@
                         <label class="label-hojaEdadOscura" translate="label_informacionBasica_natulaleza"></label>
                     </div>
                     <div class="col-md-7">
-                    	<input type="text" class="form-control" 
-                        	placeholder="{{'placeholder_informacionBasica_naturaleza' | translate}}" 
-                        	ng-model="hojaRolEdadOscura.natulareza" 
-                        	typeahead="naturaleza as naturaleza | uppercase for naturaleza in listaConductas | filter:$viewValue | limitTo:20"/>
+                        <input type="text" class="form-control"
+                               placeholder="{{'placeholder_informacionBasica_naturaleza' | translate}}"
+                               ng-model="hojaRolEdadOscura.natulareza"
+                               typeahead="naturaleza as naturaleza | uppercase for naturaleza in listaConductas | filter:$viewValue | limitTo:20"/>
                     </div>
                 </div>
             </div>
@@ -35,11 +38,11 @@
                     </div>
                     <div class="col-md-7">
                         <select name="listaGeneracionEdadOscura"
-							ng-model="hojaRolEdadOscura.generacion"
-							ng-options="gen.generacion | uppercase for gen in listaGeneracion track by gen.generacion"
-							ng-change="actualizarHoja();"
-							class="form-control selectHoja">
-						</select>
+                                ng-model="hojaRolEdadOscura.generacion"
+                                ng-options="gen.generacion | uppercase for gen in listaGeneracion track by gen.generacion"
+                                ng-change="actualizarHoja();"
+                                class="form-control selectHoja">
+                        </select>
                     </div>
                 </div>
             </div>
@@ -51,7 +54,8 @@
                         <label class="label-hojaEdadOscura" translate="label_informacionBasica_jugador"></label>
                     </div>
                     <div class="col-md-7">
-                    	<input type="text" class="form-control" ng-model="hojaRolEdadOscura.jugador" placeholder="{{'placeholder_informacionBasica_jugador' | translate}}">  
+                        <input type="text" class="form-control" ng-model="hojaRolEdadOscura.jugador"
+                               placeholder="{{'placeholder_informacionBasica_jugador' | translate}}">
                     </div>
                 </div>
             </div>
@@ -61,10 +65,10 @@
                         <label class="label-hojaEdadOscura" translate="label_informacionBasica_conducta"></label>
                     </div>
                     <div class="col-md-7">
-                        <input type="text" class="form-control" 
-                        	placeholder="{{'placeholder_informacionBasica_conducta' | translate}}" 
-                        	ng-model="hojaRolEdadOscura.conducta" 
-                        	typeahead="conducta as conducta | uppercase for conducta in listaConductas | filter:$viewValue | limitTo:20"/>
+                        <input type="text" class="form-control"
+                               placeholder="{{'placeholder_informacionBasica_conducta' | translate}}"
+                               ng-model="hojaRolEdadOscura.conducta"
+                               typeahead="conducta as conducta | uppercase for conducta in listaConductas | filter:$viewValue | limitTo:20"/>
                     </div>
                 </div>
             </div>
@@ -74,10 +78,10 @@
                         <label class="label-hojaEdadOscura" translate="label_informacionBasica_concepto"></label>
                     </div>
                     <div class="col-md-7">
-                        <input type="text" class="form-control" 
-                        	placeholder="{{'placeholder_informacionBasica_concepto' | translate}}" 
-                        	ng-model="hojaRolEdadOscura.concepto" 
-                        	typeahead="concepto as concepto | uppercase for concepto in listaConceptos | filter:$viewValue | limitTo:20"/>
+                        <input type="text" class="form-control"
+                               placeholder="{{'placeholder_informacionBasica_concepto' | translate}}"
+                               ng-model="hojaRolEdadOscura.concepto"
+                               typeahead="concepto as concepto | uppercase for concepto in listaConceptos | filter:$viewValue | limitTo:20"/>
                     </div>
                 </div>
             </div>
@@ -85,12 +89,13 @@
         <div class="row">
             <div class="col-md-4 ">
                 <div class="row">
-	                <div class="col-md-5">
-	                    <label class="label-hojaEdadOscura" translate="label_informacionBasica_cronica"></label>
-	                </div>
-	                <div class="col-md-7">
-	                    <input type="text" class="form-control" ng-model="hojaRolEdadOscura.cronica" placeholder="{{'placeholder_informacionBasica_cronica' | translate}}">
-	                </div>
+                    <div class="col-md-5">
+                        <label class="label-hojaEdadOscura" translate="label_informacionBasica_cronica"></label>
+                    </div>
+                    <div class="col-md-7">
+                        <input type="text" class="form-control" ng-model="hojaRolEdadOscura.cronica"
+                               placeholder="{{'placeholder_informacionBasica_cronica' | translate}}">
+                    </div>
                 </div>
             </div>
             <div class="col-md-4 ">
@@ -99,12 +104,12 @@
                         <label class="label-hojaEdadOscura" translate="label_informacionBasica_clan"></label>
                     </div>
                     <div class="col-md-7">
-						<select name="listaClanesEdadOscura"
-							ng-model="hojaRolEdadOscura.clan"
-							ng-options="clanes.clan | uppercase for clanes in listaClanesEdadOscura track by clanes.clan"
-							ng-change="actualizarListaDisciplinas();"
-							class="form-control selectHoja">
-						</select>
+                        <select name="listaClanesEdadOscura"
+                                ng-model="hojaRolEdadOscura.clan"
+                                ng-options="clanes.clan | uppercase for clanes in listaClanesEdadOscura track by clanes.clan"
+                                ng-change="actualizarListaDisciplinas();"
+                                class="form-control selectHoja">
+                        </select>
                     </div>
                 </div>
             </div>
@@ -114,10 +119,11 @@
                         <label class="label-hojaEdadOscura" translate="label_informacionBasica_refugio"></label>
                     </div>
                     <div class="col-md-7">
-                        <input type="text" class="form-control" ng-model="hojaRolEdadOscura.refugio" placeholder="{{'placeholder_informacionBasica_refugio' | translate}}">  
+                        <input type="text" class="form-control" ng-model="hojaRolEdadOscura.refugio"
+                               placeholder="{{'placeholder_informacionBasica_refugio' | translate}}">
                     </div>
                 </div>
             </div>
-        </div>                                    
-    </div>                    
+        </div>
+    </div>
 </div>

@@ -1,71 +1,85 @@
 <div ng-controller="VentajasCtrl" class="panel panel-danger transparencia">
     <div class="panel-heading">
-    	<div class="row">
-    		<div class="col-md-7 subtitulos col-md-offset-5">
-        		<h3 class="panel-title" translate="h3_ventajas_titulo"></h3>
-        	</div>
+        <div class="row">
+            <div class="col-md-7 subtitulos col-md-offset-5">
+                <h3 class="panel-title" translate="h3_ventajas_titulo"></h3>
+            </div>
         </div>
     </div>
     <div class="panel-body">
         <div class="row">
             <div class="col-md-4 form-inline">
-            	<div class="row">
-            		<label class="col-md-4 label-hojaEdadOscura" translate="label_ventajas_disciplinas"></label>
-            	</div>
-            	<adicionaryremover texto="textoDisciplina" array="hojaRolEdadOscura.clan.disciplinas" adicion="disciplinaAdicionar" categoria="''"></adicionaryremover>
-            	<br>
                 <div class="row">
-                	<div name="disciplinas" class="col-md-12" ng-repeat="disciplina in hojaRolEdadOscura.clan.disciplinas">
-                		<div ng-if="disciplina.categoria==''">
-					  		<labelycheckbox nombre="disciplina.disciplina" puntos="disciplina.puntos" generacion="hojaRolEdadOscura.generacion.rangoMaximo" tipo="disciplina.tipo" lista="listaDisciplinas"></labelycheckbox>
-					  	</div>
-					</div>
+                    <label class="col-md-4 label-hojaEdadOscura" translate="label_ventajas_disciplinas"></label>
                 </div>
-            	<br>
-            	<adicionaryremover texto="textoDisciplinaSenda" array="hojaRolEdadOscura.clan.disciplinas" adicion="disciplinaAdicionarSenda" categoria="'senda'"
-            		ng-if="listaDisciplinasUnicasCLan[hojaRolEdadOscura.clan.clan].length>0"></adicionaryremover>
-            	<div class="row">
-	            	<div name="disciplinasSenda" class="col-md-12" ng-repeat="disciplina in hojaRolEdadOscura.clan.disciplinas">
-	                	<div ng-if="disciplina.categoria=='senda'">
-						   <labelycheckbox nombre="disciplina.disciplina" puntos="disciplina.puntos" generacion="hojaRolEdadOscura.generacion.rangoMaximo"
-						    tipo="disciplina.tipo" lista="listaDisciplinasUnicasCLan[hojaRolEdadOscura.clan.clan]"></labelycheckbox>
-						</div>
-	            	</div>
-            	</div>
-                
+                <adicionaryremover texto="textoDisciplina" array="hojaRolEdadOscura.clan.disciplinas"
+                                   adicion="disciplinaAdicionar" categoria="''"></adicionaryremover>
+                <br>
+                <div class="row">
+                    <div name="disciplinas" class="col-md-12"
+                         ng-repeat="disciplina in hojaRolEdadOscura.clan.disciplinas">
+                        <div ng-if="disciplina.categoria==''">
+                            <labelycheckbox nombre="disciplina.disciplina" puntos="disciplina.puntos"
+                                            generacion="hojaRolEdadOscura.generacion.rangoMaximo" tipo="disciplina.tipo"
+                                            lista="listaDisciplinas"></labelycheckbox>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <adicionaryremover texto="textoDisciplinaSenda" array="hojaRolEdadOscura.clan.disciplinas"
+                                   adicion="disciplinaAdicionarSenda" categoria="'senda'"
+                                   ng-if="listaDisciplinasUnicasCLan[hojaRolEdadOscura.clan.clan].length>0"></adicionaryremover>
+                <div class="row">
+                    <div name="disciplinasSenda" class="col-md-12"
+                         ng-repeat="disciplina in hojaRolEdadOscura.clan.disciplinas">
+                        <div ng-if="disciplina.categoria=='senda'">
+                            <labelycheckbox nombre="disciplina.disciplina" puntos="disciplina.puntos"
+                                            generacion="hojaRolEdadOscura.generacion.rangoMaximo"
+                                            tipo="disciplina.tipo"
+                                            lista="listaDisciplinasUnicasCLan[hojaRolEdadOscura.clan.clan]"></labelycheckbox>
+                        </div>
+                    </div>
+                </div>
+
             </div>
             <div class="col-md-4 form-inline">
-            	<div class="row">
-            		<label class="col-md-4 label-hojaEdadOscura" translate="label_ventajas_transfondos"></label>
-            	</div>
-                <adicionaryremover texto="textoTrasfondo" array="hojaRolEdadOscura.ventajas.transfondos" adicion="transfondoAdicionar"></adicionaryremover>
-           		<br>
                 <div class="row">
-                	<div name="transfondos" class="col-md-12" ng-repeat="transfondo in hojaRolEdadOscura.ventajas.transfondos">
-					   <labelycheckbox nombre="transfondo.nombre" puntos="transfondo.puntos" generacion="hojaRolEdadOscura.generacion.rangoMaximo" tipo="transfondo.tipo" lista="trasfondos" descripcion="transfondo.descripcion"></labelycheckbox>
-					</div>
+                    <label class="col-md-4 label-hojaEdadOscura" translate="label_ventajas_transfondos"></label>
+                </div>
+                <adicionaryremover texto="textoTrasfondo" array="hojaRolEdadOscura.ventajas.transfondos"
+                                   adicion="transfondoAdicionar"></adicionaryremover>
+                <br>
+                <div class="row">
+                    <div name="transfondos" class="col-md-12"
+                         ng-repeat="transfondo in hojaRolEdadOscura.ventajas.transfondos">
+                        <labelycheckbox nombre="transfondo.nombre" puntos="transfondo.puntos"
+                                        generacion="hojaRolEdadOscura.generacion.rangoMaximo" tipo="transfondo.tipo"
+                                        lista="trasfondos" descripcion="transfondo.descripcion"></labelycheckbox>
+                    </div>
                 </div>
             </div>
             <div class="col-md-4 form-inline">
-            	<div class="row">
-            		<label class="col-md-4 label-hojaEdadOscura" translate="label_ventajas_virtudes"></label>
-            	</div>
-            	<br>
-            	<br>
+                <div class="row">
+                    <label class="col-md-4 label-hojaEdadOscura" translate="label_ventajas_virtudes"></label>
+                </div>
+                <br>
+                <br>
                 <div class="row">
                     <div class="col-md-7 subtitulos">
-                    	<label class="col-md-4 subtitulos" translate="label_ventajas_conciencia"></label>
+                        <label class="col-md-4 subtitulos" translate="label_ventajas_conciencia"></label>
                     </div>
                     <div class="col-md-5">
-                        <checkbox nombre="conciencia" puntos="hojaRolEdadOscura.ventajas.virtudes.conciencia" generacion="hojaRolEdadOscura.generacion.rangoMaximo"></checkbox>
+                        <checkbox nombre="conciencia" puntos="hojaRolEdadOscura.ventajas.virtudes.conciencia"
+                                  generacion="hojaRolEdadOscura.generacion.rangoMaximo"></checkbox>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-7 subtitulos">
-                    	<label class="col-md-4 subtitulos" translate="label_ventajas_autocontrol"></label>
+                        <label class="col-md-4 subtitulos" translate="label_ventajas_autocontrol"></label>
                     </div>
                     <div class="col-md-5">
-	                	<checkbox nombre="autocontrol"  puntos="hojaRolEdadOscura.ventajas.virtudes.autocontrol" generacion="hojaRolEdadOscura.generacion.rangoMaximo"></checkbox>
+                        <checkbox nombre="autocontrol" puntos="hojaRolEdadOscura.ventajas.virtudes.autocontrol"
+                                  generacion="hojaRolEdadOscura.generacion.rangoMaximo"></checkbox>
                     </div>
                 </div>
                 <div class="row">
@@ -73,10 +87,11 @@
                         <label class="col-md-4 subtitulos" translate="label_ventajas_coraje"></label>
                     </div>
                     <div class="col-md-5">
-                        <checkbox nombre="coraje" puntos="hojaRolEdadOscura.ventajas.virtudes.coraje" generacion="hojaRolEdadOscura.generacion.rangoMaximo"></checkbox>
+                        <checkbox nombre="coraje" puntos="hojaRolEdadOscura.ventajas.virtudes.coraje"
+                                  generacion="hojaRolEdadOscura.generacion.rangoMaximo"></checkbox>
                     </div>
                 </div>
             </div>
         </div>
-    </div>                    
+    </div>
 </div>

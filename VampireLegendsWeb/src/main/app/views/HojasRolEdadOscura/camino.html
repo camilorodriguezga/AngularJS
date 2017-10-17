@@ -1,23 +1,25 @@
 <div ng-controller="CaminoCtrl" class="panel panel-danger transparencia">
-   	<div class="panel-heading">
-	   	<div class="row">
-	        <label class="col-md-7 col-md-offset-5 label-hojaEdadOscura" title="Humanidad" translate="label_camino_titulo"></label>
-	    </div>
+    <div class="panel-heading">
+        <div class="row">
+            <label class="col-md-7 col-md-offset-5 label-hojaEdadOscura" title="Humanidad"
+                   translate="label_camino_titulo"></label>
+        </div>
     </div>
     <div class="panel-body">
-	    <div class="row">
-	        <div class="col-md-10 col-md-offset-1">
-	   			<select name="Senda"
-					ng-model="hojaRolEdadOscura.camino"
-					ng-options="camino.nombre for camino in listaCamino track by camino.nombre"
-					ng-change="actualizarCamino(hojaRolEdadOscura.camino);"
-					custom-attr="camino.descripcion"
-					class="form-control selectHoja">
-				</select>
-	        </div>
-	        <div class="col-md-8 col-md-offset-4">
-	            <checkbox nombre="camino" puntos="hojaRolEdadOscura.camino.puntos" generacion="hojaRolEdadOscura.camino.puntosCamino"></checkbox>
-	        </div>
-	    </div>
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <select name="Senda"
+                        ng-model="hojaRolEdadOscura.camino"
+                        ng-options="camino.nombre for camino in listaCamino track by camino.nombre"
+                        ng-change="actualizarCamino(hojaRolEdadOscura.camino);"
+                        custom-attr="camino.descripcion"
+                        class="form-control selectHoja">
+                </select>
+            </div>
+            <div class="col-md-8 col-md-offset-4">
+                <checkbox nombre="camino" puntos="hojaRolEdadOscura.camino.puntos"
+                          generacion="hojaRolEdadOscura.camino.puntosCamino"></checkbox>
+            </div>
+        </div>
     </div>
 </div>
